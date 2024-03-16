@@ -1,5 +1,5 @@
 # LeetCode Practice 📕
-* LeedCode practice recording from now on.
+* accepted record
 * main language use : **java**
 ---
 update by Vicky Tsai 😊
