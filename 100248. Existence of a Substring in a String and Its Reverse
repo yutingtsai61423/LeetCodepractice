@@ -1,0 +1,30 @@
+class Solution {
+    public boolean isSubstringPresent(String s) {
+        //反轉的字串
+        String sReverse = new StringBuilder(s).reverse().toString();
+        
+        //剩下還沒切割的字串&其長度
+        String sRemain = s;
+        int sRemainLength = sRemain.length() ;
+        while(sRemainLength >= 2){
+            System.out.println(sRemain);
+            //每次切兩個字元
+            String sSub = sRemain.substring(0, 2);
+            if(sReverse.contains(sSub)){
+                return true;
+            }
+ 
+            if(sRemainLength>=2){
+                sRemain = sRemain.substring(1, sRemainLength);//剩下還沒用的字串
+                System.out.println("sRemainLength>2 next sRemain="+sRemain);
+            }
+            sRemainLength = sRemain.length();
+            System.out.println("next sRemainLength="+sRemainLength);
+            System.out.println("next sRemain="+sRemain);
+        }
+
+        
+        
+        
+        return false;
+    }
