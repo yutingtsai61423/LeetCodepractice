@@ -1,5 +1,9 @@
+ //可簡化為由數列最右邊找一個質數 最左邊找一個質數，兩個index相減
+
 class Solution {
     public int maximumPrimeDifference(int[] nums) {
+
+        
         //找出質數 -> index另存arr -> 找arr中最大-最小
     
         //列出0~100的質數表 1不是質數 
